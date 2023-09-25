@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+}
+
+body {
+
+    /* background-color: #3b3c44; */
+    background: rgb(34,105,195);
+background: linear-gradient(0deg, rgba(34,105,195,0.726015406162465) 4%, rgba(145,46,178,0.7960434173669468) 100%);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    display: flex;
+
+}
+
+input, button {
+
+    border-color: transparent;
+
+}
+
+
+
+/* Container geral com as divs, tasksContainer e sendTask */
+#container {
+
+    box-shadow: 1px 1px 3px black;
+    background-color: #7562c3;
+    flex-direction: column;
+    align-items: center;
+    align-items: space-between;
+    border-radius: 10px;
+    display: flex;
+    height: auto;
+    padding: 20px;
+    width: 600px;
+ 
+}
+
+
+
+/* Container para adicionar novas tarefas */
+.sendTask {
+
+    justify-content: space-evenly;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    display: flex;
+    width: 90%;
+   
+
+}
+
+.textInput {
+    
+    background-color: #a7abcc;
+    text-align: center;
+    border-radius: 5px;
+    color: #52535e;
+    font-size: 15px;
+    padding: 5px;
+    border: none;
+    width: 80%;
+    
+    
+}
+
+.textInput:hover {
+
+    filter: brightness(1.2);
+    cursor: pointer;
+
+}
+
+.textInput:focus{
+
+    border: 1px solid #0187a7;
+    filter: brightness(1.2);
+    border-radius: 10px;
+    outline-style: none;
+    color: rgb(24, 23, 23);
+    transition: 0.2s;
+
+}
+
+#sendButton {
+
+    background-color:  #0187a7;
+    color: whitesmoke;
+    border-radius: 40%;
+    font-size: 18px;
+   
+}
+
+#sendButton:hover {
+    
+    background-color:  whitesmoke;
+    border-radius: 50%;    
+    color: #0187a7;
+    transition: 0.2s;
+    font-size: 18.5px;
+    cursor: pointer;
+
+}
+
+
+/* Overlay que deixara todo o site ofuscado */
+#overlay {
+
+     background: #24252A;
+     position: fixed;
+     opacity: 0.92;
+     display: none;
+     height: 100%;
+     width: 100%;
+     left: 0px;
+     top: 0px;
+     z-index: 9;
+
+ }
+
+ /* Container de edição de task */
+ #editContainer{
+  
+     background-color: #24252A;
+     border: 0.5px solid #0187a7;
+     justify-content: space-around;
+     flex-direction: column;
+     align-items: center;
+     border-radius: 10px;
+     position: absolute;
+     height: 100px;
+     padding: 10px;
+     width: 300px;
+     display: none;
+     z-index: 10;
+
+ }
+
+ #editContainer div {
+
+    justify-content: center;
+    display: flex;
+    width: 80%;
+
+ }
+
+
+
+ #cancelButton, #editButton{
+
+     background-color: #0187a7;
+     color: whitesmoke;
+     border-radius: 5px;
+     padding: 3px 10px;
+     margin: 5px;
+
+ }
+
+ #cancelButton:hover, #editButton:hover{
+
+    background-color:  whitesmoke;
+    border-radius: 10px;    
+    color: #0187a7;
+    transition: 0.2s;
+    cursor: pointer;
+   
+ }
+
+
+
+
+
+
+/* Container onde as tarefas serão agrupadas */
+
+.tasksContainer {
+    flex: 2;
+    padding: 5px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 70%;
+    
+}
+
+.task {
+    display: flex;
+    background-color: #3b3c44;
+  
+    border-radius: 5px;
+justify-content: space-between;
+align-items: center;
+
+margin: 2px;
+color: whitesmoke;
+
+padding: 5px 7px;
+flex-wrap: wrap;
+
+
+  
+}
+
+.task p {
+    padding: 0 10px ;
+  padding-top: 2px;
+
+    text-align: center;
+ flex: 4;
+}
+
+.task:hover{
+    cursor: default;
+    transition: 0.2s;
+    border-radius: 10px;
+    filter: brightness(1.2);
+}
+.delete, .edit {
+   
+    
+    text-align: center;
+    background-color: #3b3c44;
+    filter: brightness(1.5);
+    border-radius: 40%;
+    width: 20px;
+    height: 20px;
+    margin-left: 2px; 
+    color: #0187a7;
+    
+    
+}
+
+.delete:hover, .edit:hover{
+    
+    border-radius: 50%;   
+    
+    cursor: pointer;
+background-color: #52535e;
+
+    transition: 0.2s;
+}
+
+.delete{
+    color: #d60505;
+}
+
+.checkbox:hover{
+
+    cursor: pointer;
+    color: #0187a7;
+    transition: 0.2s;
+}
+
+.material-symbols-outlined {
+
+    padding-top: 2px;
+    font-size: 15px;
+
+    
+   
+  
+
+}
+
+
+
+
+

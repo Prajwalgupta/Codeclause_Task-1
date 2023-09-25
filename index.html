@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <title>TO-DO List</title>
+</head>
+<body>
+<div style="display:flex;flex-direction:column">
+     <div id="hk" >Todo list</div>
+    <div id="overlay"></div>
+    <div id="editContainer">
+        <div>
+            <input type="text" class="textInput" id="editInput" placeholder="Edit Here....">
+        </div>
+
+        <div>
+            <input type="button"  id="cancelButton" value="cancel">
+            <input type="button"  id="editButton" value="Change">
+        </div>
+    </div>
+
+
+    
+    <div id="container">
+
+
+      <div class="sendTask">
+          <input type="text" class="textInput" id="sendInput" placeholder="Write Here...">
+          <input type="button"  id="sendButton" value="+">
+      </div>
+    
+      <div class="tasksContainer" id="tasksContainer"></div>
+       
+    </div>
+    </div>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
